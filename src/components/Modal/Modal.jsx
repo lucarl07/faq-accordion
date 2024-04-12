@@ -1,12 +1,17 @@
 import './Modal.css'
 
-const Modal = ({texto}) => {
-    return (
-        <p>{texto}</p>
-    )
+const Modal = ({text, modal}) => {
+    if (modal === true) {
+        return (
+            <p className='answer'>{text}</p>
+        );
+    }
+
+    return null;
 }
 Modal.propTypes = {
-    texto: String.isRequired
+    text: String.isRequired,
+    modal: Boolean.isRequired
 }
 
 export default Modal

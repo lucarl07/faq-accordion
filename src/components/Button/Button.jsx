@@ -1,12 +1,16 @@
 import './Button.css'
 
-const Button = ({nome}) => {
+const Button = ({setModal, modal, text}) => {
     return (
-        <button>{nome}</button>
+        <button className='btn' onClick={() => setModal(!modal)}>
+            {text}
+        </button>
     );
 }
 Button.propTypes = {
-    nome: String.isRequired
+    setModal: Function.isRequired,
+    modal: Boolean.isRequired,
+    text: String.isRequired
 }
 
 export default Button;
