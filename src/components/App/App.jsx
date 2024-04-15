@@ -1,6 +1,11 @@
+// Components and stylesheets:
 import ModalContainer from '../ModalContainer/ModalContainer';
 import Container from '../Container/Container';
+import PageTitle from '../PageTitle/PageTitle';
 import './App.css'
+
+// Images:
+import iconStar from '../../assets/images/icon-star.svg'
 
 const App = () => {
     const answers = [
@@ -12,10 +17,13 @@ const App = () => {
 
     return (
         <Container>
-            <ModalContainer question={`What is Frontend Mentor, and how will it help me?`} answer={answers[0]}/>
-            <ModalContainer question={`Is Frontend Mentor free?`} answer={answers[1]}/>
-            <ModalContainer question={`Can i use Frontend Mentor projects in my portfolio?`} answer={answers[2]}/>
-            <ModalContainer question={`How can I get help if I'm stuck on a challenge? `} answer={answers[3]}/>
+            <PageTitle title={'FAQs'} src={iconStar} alt={'Sparkling star'} />
+            <div className='question-list'>
+                <ModalContainer question={`What is Frontend Mentor, and how will it help me?`} answer={answers[0]}/>
+                <ModalContainer question={`Is Frontend Mentor free?`} answer={answers[1]}/>
+                <ModalContainer question={`Can i use Frontend Mentor projects in my portfolio?`} answer={answers[2]}/>
+                <ModalContainer question={`How can I get help if I'm stuck on a challenge? `} answer={answers[3]}/>
+            </div>
         </Container>
     );
 }

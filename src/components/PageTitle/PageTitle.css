@@ -1,0 +1,15 @@
+.title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title img {
+    width: 32px;
+    height: 32px;
+}
+
+.title h1 {
+    font-size: 3rem;
+    color: var(--Dark-purple);
+}
