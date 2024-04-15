@@ -9,3 +9,8 @@
     font-weight: 600;
     font-size: var(--p-size);
 }
+
+.btn:hover {
+    color: var(--Purple);
+    cursor: pointer;
+}

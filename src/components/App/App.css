@@ -9,3 +9,9 @@ body {
     background-size: 200vh;
     background-color: var(--Light-pink);   
 }
+
+hr {
+    margin-top: 1rem;
+    border-color: var(--Light-pink);
+    opacity: 0.25;
+}

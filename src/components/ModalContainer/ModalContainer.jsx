@@ -10,7 +10,6 @@ const ModalContainer = ({question, answer}) => {
         <div className='question'>
             <Button setModal={setModal} modal={modal} text={question} />
             <Modal modal={modal} text={answer}/>
-            <hr/>
         </div>
     );
 }
